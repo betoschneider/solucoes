@@ -9,8 +9,11 @@ import pyautogui
 import time
 import random
 
-#pyautogui.FAILSAFE = False
+#desabilita recurso de seguranca
+#cria exception se o cursor do mouse estiver em cada um dos cantos da tela
+pyautogui.FAILSAFE = False
 
+#tempo inicial
 t0 = time.time()
 
 #tempo de espera em segundos
@@ -19,7 +22,6 @@ t = 10
 try:
     while True:
         print('Pressione Ctrl+C para sair...')
-        
         
         dt = 1
         while dt <= t:
